@@ -1,15 +1,15 @@
 body {
     margin: auto;
     background-color: #fff;
+    min-height: 100vh;
 }
 
 /* Header with logo and nav */ 
 header {
     background-color: #7ba376;
     display: flex; 
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;   
-    max-width: 100vw; 
     width: 100%;
     min-height: 88px;
     height: 100%;
@@ -27,8 +27,9 @@ header {
 
 }
 
-.nav__links li, .nav__links li a {
+.navbar li {
     display: inline-block;
+    position: relative; 
     text-decoration: none; 
     list-style: none; 
     color: #fff;
@@ -37,13 +38,44 @@ header {
     font-family: arial, sans-serif; 
     font-style: normal; 
     line-height: 21px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
-.nav__links li a:hover {
-    color: #5A5274;
-    /* Have not decided on this, using purple for now */ 
+.navbar li a {
+    display: inline-block;
+    position: relative; 
+    text-decoration: none; 
+    list-style: none; 
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    font-family: arial, sans-serif; 
+    font-style: normal; 
+    line-height: 21px;
 }
+
+.navbar li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5A5274; 
+    transform-origin: bottom center;
+    transition: transform 0.4s ease-out; 
+}
+
+.navbar li:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom center;
+}
+
+/*.nav__links li a:hover {
+    color: #5A5274;
+}    /* Have not decided on this, using purple for now */ 
+/*
 
 
 /* Own content */
@@ -55,7 +87,6 @@ header {
 
 .footer__container {
     background-color: #7ba376;
-    max-width: 100vw; 
     width: 100%;
     min-height: 200px;
     height: 100%;
@@ -183,4 +214,3 @@ p {
 .sign-up-now-footer:hover {
     background-color: #775298;
     color: #FFF;
-}
