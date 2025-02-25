@@ -1,7 +1,9 @@
 body {
-    margin: auto;
+    margin: 0;
+    box-sizing: border-box;
     background-color: #fff;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 /* Header with logo and nav */ 
@@ -10,7 +12,6 @@ header {
     display: flex; 
     justify-content: space-between;
     align-items: center;   
-    width: 100%;
     min-height: 88px;
     height: 100%;
     padding-left: 140px; 
@@ -37,8 +38,9 @@ header {
     font-size: 18px;
     font-family: arial, sans-serif; 
     font-style: normal; 
+    letter-spacing: 0.43px;;
     line-height: 21px;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .navbar li a {
@@ -62,7 +64,7 @@ header {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #5A5274; 
+    background-color: #fff; 
     transform-origin: bottom center;
     transition: transform 0.4s ease-out; 
 }
@@ -72,22 +74,22 @@ header {
     transform-origin: bottom center;
 }
 
-/*.nav__links li a:hover {
-    color: #5A5274;
-}    /* Have not decided on this, using purple for now */ 
-/*
 
 
 /* Own content */
+
+.own {
+    width: 500px;
+    height: 400px; 
+}
+
 
 
 
 
 /* Footer */
-
 .footer__container {
     background-color: #7ba376;
-    width: 100%;
     min-height: 200px;
     height: 100%;
     display: flex;
@@ -122,6 +124,7 @@ p {
     font-family: arial, sans-serif; 
     font-style: normal; 
     font-size: 18px; 
+    line-height: 21px;
     color: #fff; 
 }
 
@@ -133,84 +136,3 @@ p {
     font-size: 30px; 
     color: #fff; 
 }
-
-/*.footer {
-    margin: auto;
-    display: flex;
-    padding-top: 125px;
-    max-width: 1109px;
-    width: 100%;
-    min-height: 308px;
-    height: 100%;
-    border-top: 1px solid rgba(188, 208, 229, 0.49691325426101685);
-    margin-bottom: 83px; 
-}
-
-.footer__list {
-    display: inline-block;
-    margin-left: 125px;
-    margin-right: 82px;
-    margin-top: 33px;
-    column-count: 2;
-    column-gap: 175px;
-
-}
-.footer__list li, .footer__list li a {
-    text-decoration: none; 
-    list-style: none; 
-    color:#534836;
-    text-align:left;
-    vertical-align:text-top;
-    font-size:16px;
-    font-family:"Poppins", serif;
-    line-height:35px;
-}
-
-.footer__list li a:hover {
-    color: #775298;
-}
-
-.footer__right {
-    margin: auto;
-    display: flex; 
-    flex-direction: column;
-    justify-content: baseline;
-    gap: 21px;
-    max-width: 325px;
-    width: 100%;
-    min-height: 199px;
-    height: 100%;
-}
-
-.footer__rectangle {
-    display: flex;
-    background-color:#ffffff;
-    min-height:48px;
-    height: 100%;
-    max-width:325px;
-    width: 100%;
-    border:1px solid #bcd0e5;
-    border-radius: 4px;
-}
-
-.sign-up-now-footer {
-    background-color:#ff9900;
-    color: #fff;
-    min-height:39px;
-    height: 100%;
-    max-width:131px;
-    width: 100%;
-    border-radius:4px;
-    border-style: none;
-    text-align:center;
-    vertical-align:text-top;
-    font-size:16px;
-    font-family:"Poppins", serif;
-    font-style: normal;
-    font-weight: bold; 
-    line-height:auto;
-}
-
-.sign-up-now-footer:hover {
-    background-color: #775298;
-    color: #FFF;
