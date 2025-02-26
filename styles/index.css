@@ -78,11 +78,16 @@ header {
 
 /* Own content */
 
-.own {
-    width: 500px;
-    height: 400px; 
-}
 
+.first__section {
+    width: 100%; 
+    min-height: 400px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+}
 
 
 
@@ -108,10 +113,12 @@ header {
     list-style: none; 
 }
 
-.footer__list li a:hover {
-    color: #5A5274;
-    /* Have not decided on this, using purple for now */ 
+.footer__list li:hover {
+    transform: scale(1.1);
+    font-weight: bold; 
+    cursor: pointer;
 }
+
 
 .footer__label {
     font-family: arial, sans-serif; 
@@ -120,19 +127,22 @@ header {
     color: #fff; 
 }
 
+
+.icons {
+    margin: auto;
+font-size: 40px;
+color: #fff;
+}
+
+.fa-square-instagram:hover, .fa-square-facebook:hover, .fa-square-x-twitter:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 p {
     font-family: arial, sans-serif; 
     font-style: normal; 
     font-size: 18px; 
     line-height: 21px;
-    color: #fff; 
-}
-
-.logo__footer {
-    display: flex; 
-    align-content: center; 
-    font-family: "orbitron", serif; 
-    font-weight: bold;
-    font-size: 30px; 
     color: #fff; 
 }
